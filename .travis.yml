@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true 
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: PeQPXmNYCU7KBQfNQDAfJMCgEJJsjoNYmdSmCOQ6EnHnlp/EMvM3XmPCclyGIMYPIjLnG4Sjmo3LlJrN4FuSZ7TE3lp7TNYA/LN/wClU+JLy1DORoINu706kB7IKOuBpCW68VNJ1TQaTOxSrbGpZ+6RFwxtbflu3GBqHVZjmLN7g3PosNQiQne6bR5uFib/QIejt0hO2bUH0Cw9uiQX8ys5J1OjyIuFQof/AuFiwGIydiPwge2YbBafcXCguKWNYXaXDEPJoQAYmOIl6csX0IrFeinYEYgXAvPRf2Z6rmGTcdAz8A4s6Qcv16NTKENr/zwhvjHZ/fS3amRkh/74GUSkqV39UlrQ0s+xduBNWWioyGT2KW26DZIL40sZJ15577CgzT+kBsYDlTfQHroX4VvXKnP4ABXRCkurZ0qWjC79hE21141T+cwluDyi6OHXtf926kURjXMEK1wTLZ71Qdoyo0+u5itvRBFOu7LoS2lcF699DajAYdCLaxGoiJLbxZgsS2n8c4JyEipfGZ+NMjVcILOwjRAyzFOQn3gN+H1fEfB4P7buP+bkOt3/HUQ1g60FpwsBniqN9g5MLNc0L1HCZ6fy/oMZk5cASsvM/CvE7LqsCh+tUC7XULklJLAxE4zxkxIdfxpnVjpfez1GPBRCICPF7ZvyodVKnzglBhnA=
+  app: polar-brushlands-86792
+  on:
+    repo: staysee/react-trello-testing
